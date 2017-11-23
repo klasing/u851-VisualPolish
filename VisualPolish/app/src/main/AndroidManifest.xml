@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ColorFontActivity"
+            android:label="@string/color_font_name" />
     </application>
 
 </manifest>
