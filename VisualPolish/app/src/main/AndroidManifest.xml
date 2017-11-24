@@ -19,6 +19,16 @@
         <activity
             android:name=".ColorFontActivity"
             android:label="@string/color_font_name" />
+        <activity
+            android:name=".StyleActivity"
+            android:label="@string/style_name" />
+        <activity
+            android:name=".ResponsiveLayoutActivity"
+            android:label="@string/responsive_layout_name" />
+
+        <activity
+            android:name=".SelectorsActivity"
+            android:label="@string/touch_selectors_name" />
     </application>
 
 </manifest>

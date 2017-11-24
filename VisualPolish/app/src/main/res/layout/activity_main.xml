@@ -15,5 +15,20 @@
         android:id="@+id/colorAndFont"
         style="@style/ActivityLabelStyle"
         android:text="@string/color_font_name" />
+
+    <TextView
+        android:id="@+id/style"
+        style="@style/ActivityLabelStyle"
+        android:text="@string/style_name" />
+
+    <TextView
+        android:id="@+id/responsiveLayouts"
+        style="@style/ActivityLabelStyle"
+        android:text="@string/responsive_layout_name" />
+
+    <TextView
+        android:id="@+id/touchSelector"
+        style="@style/ActivityLabelStyle"
+        android:text="@string/touch_selectors_name" />
 </LinearLayout>
 

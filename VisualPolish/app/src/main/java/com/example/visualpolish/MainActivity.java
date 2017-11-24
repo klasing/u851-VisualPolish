@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView colorAndFont = (TextView) findViewById(R.id.colorAndFont);
+        TextView style = (TextView) findViewById(R.id.style);
+        TextView responsiveLayouts = (TextView) findViewById(R.id.responsiveLayouts);
+        TextView touchSelector = (TextView) findViewById(R.id.touchSelector);
 
         assert colorAndFont != null;
         colorAndFont.setOnClickListener(new View.OnClickListener() {
@@ -21,6 +24,33 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent numbersIntent = new Intent(MainActivity.this, ColorFontActivity.class);
                 startActivity(numbersIntent);
+            }
+        });
+
+        assert style != null;
+        style.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent familyIntent = new Intent(MainActivity.this, StyleActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        assert responsiveLayouts != null;
+        responsiveLayouts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent familyIntent = new Intent(MainActivity.this, ResponsiveLayoutActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        assert touchSelector != null;
+        touchSelector.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent colorsIntent = new Intent(MainActivity.this, SelectorsActivity.class);
+                startActivity(colorsIntent);
             }
         });
     }
